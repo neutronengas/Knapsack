@@ -1,0 +1,7 @@
+n_qubits = 4
+profits = [i for i in range(n_qubits)]
+weights = [i for i in range(n_qubits)]
+theta_s = [0.8 for _ in range(n_qubits)]
+max_weight = sum(weights)
+probs = [0.5 for _ in range(n_qubits)]
+res = grid_search(profits, weights, probs, theta_s, max_weight, 100, 100)
